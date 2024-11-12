@@ -32,7 +32,7 @@ const ListAntiPhishingFilters = () => {
             },
             {
               label: 'Enabled',
-              value: `${row.State}`,
+              value: `${row.Enabled}`,
             },
             {
               label: 'Creation Date',
@@ -93,8 +93,8 @@ const ListAntiPhishingFilters = () => {
     },
     {
       name: 'Enabled',
-      selector: (row) => row['State'],
-      exportSelector: 'State',
+      selector: (row) => row['Enabled'],
+      exportSelector: 'Enabled',
       cell: cellBooleanFormatter(),
       maxWidth: '40px',
     },
